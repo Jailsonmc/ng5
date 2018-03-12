@@ -1,0 +1,158 @@
+<!-- <p>
+  word works!
+</p> -->
+
+<div class="container color-light">
+  <div class="col">
+    <br>
+    <span>Escolha um aspecto:</span>
+    <br>
+    <select [(ngModel)]="tipo">
+      <option selected="selected" value="conjunction">Conjunction</option>
+      <option value="opposition">Opposition</option>
+      <option value="square">Square</option>
+      <option value="trine">Trine</option>
+      <option value="sextile">sextile</option>
+      <option value="semisquare">Semisquare or Octile</option>
+      <option value="sesquisquare">Sesquisquare or Trioctile</option>
+      <option value="quincunx">Quincunx or Inconjunct</option>
+      <option value="semisextile">Semisextile</option>
+      <option value="quintile">Quintile</option>
+      <option value="biquintile">Biquintile</option>
+    </select>
+    <br>
+    <span>Sentido:</span>
+    <br>
+    <select [(ngModel)]="sentido">
+      <option selected="selected" value="a">a</option>
+      <option value="s">s</option>
+    </select>
+    <br>
+    <span>Planeta 1:</span>
+    <br>
+    <select [(ngModel)]="planet1">
+      <option selected="selected" value="0">Sol</option>
+      <option value="1">Moon</option>
+      <option value="2">Mercúrio</option>
+      <option value="3">Venus</option>
+      <option value="4">Marte</option>
+      <option value="5">Júpiter</option>
+      <option value="6">Saturno</option>
+      <option value="7">Urano</option>
+      <option value="8">Neturno</option>
+      <option value="9">pluto</option>
+    </select>
+    <br>
+    <span>Planeta 2:</span>
+    <br>
+    <select [(ngModel)]="planet2">
+        <option selected="selected" value="0">Sol</option>
+        <option value="1">Moon</option>
+        <option value="2">Mercúrio</option>
+        <option value="3">Venus</option>
+        <option value="4">Marte</option>
+        <option value="5">Júpiter</option>
+        <option value="6">Saturno</option>
+        <option value="7">Urano</option>
+        <option value="8">Neturno</option>
+        <option value="9">pluto</option>
+      </select>
+    <br>
+    <span>Grau:</span>
+    <br>
+    <select [(ngModel)]="grau">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+    </select>
+    <br>
+    <span>Minuto:</span>
+    <br>
+    <select [(ngModel)]="minuto">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21</option>
+      <option value="22">22</option>
+      <option value="23">23</option>
+      <option value="24">24</option>
+      <option value="25">25</option>
+      <option value="26">26</option>
+      <option value="27">27</option>
+      <option value="28">28</option>
+      <option value="29">29</option>
+      <option value="30">30</option>
+      <option value="31">31</option>
+      <option value="32">32</option>
+      <option value="33">33</option>
+      <option value="34">34</option>
+      <option value="35">35</option>
+      <option value="36">36</option>
+      <option value="37">37</option>
+      <option value="38">38</option>
+      <option value="39">39</option>
+      <option value="40">40</option>
+      <option value="41">41</option>
+      <option value="42">42</option>
+      <option value="43">43</option>
+      <option value="44">44</option>
+      <option value="45">45</option>
+      <option value="46">46</option>
+      <option value="47">47</option>
+      <option value="48">48</option>
+      <option value="49">49</option>
+      <option value="50">50</option>
+      <option value="51">51</option>
+      <option value="52">52</option>
+      <option value="53">53</option>
+      <option value="54">54</option>
+      <option value="55">55</option>
+      <option value="56">56</option>
+      <option value="57">57</option>
+      <option value="58">58</option>
+      <option value="59">59</option>
+      <option value="60">60</option>
+    </select>
+    <!-- <input type="text" class="txt" placeholder="Tipo" name="tipo" [(ngModel)]="tipo"> -->
+    <!-- <input type="text" class="txt" placeholder="Planeta1" name="planeta1" [(ngModel)]="planet1">
+    <input type="text" class="txt" placeholder="Planeta2" name="planeta2" [(ngModel)]="planet2"> -->
+    <!-- <input type="text" class="txt" placeholder="Grau" name="grau" [(ngModel)]="grauText">
+    <input type="text" class="txt" placeholder="Minuto" name="minuto" [(ngModel)]="minutoText"> -->
+    <div class="container color-dark">
+        <p>
+            Potência : {{ valorAspect(tipo, sentido, grau, minuto, planet1, planet2) }}
+          </p>
+    </div>
+  </div>
+  </div>
